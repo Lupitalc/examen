@@ -13,12 +13,8 @@ class ArticuloController {
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Articulo.list(params), model:[articuloInstanceCount: Articulo.count()]
-        def articuloInstanceList=[]
     }
 
-    def listaArticulos(){
-        def articuloInstanceList=[]
-    }
 
     def show(Articulo articuloInstance) {
         respond articuloInstance

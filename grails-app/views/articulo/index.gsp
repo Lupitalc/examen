@@ -15,40 +15,34 @@
 </head>
 <body>
 
-<div class="table">
+
+<a href="#list-articulo" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+<div class="nav" role="navigation">
+    <ul>
+        <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+        <li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
+    </ul>
+</div>
     <table>
         <thead>
         <tr>
-            <th>No. Cliente</th>
-            <th>Nombre de Cliente</th>
-            <th>Direccion</th>
-            <th>Saldo</th>
-            <th>Limite de Cr&oacute;dito</th>
-            <th>Descuento</th>
-            <th>NO. Pedido</th>
+            <th>No. Articulo</th>
+            <th>Descripcion</th>
+            <th>Existencias</th>
         </tr>
         </thead>
         <tbody>
             <g:each in="${articuloInstanceList}" status="i" var="articuloInstance">
                 <tr>
-                  <%--  <td class="text-center">${articuloInstance?.id}</td>
+                  <td class="text-center">${articuloInstance?.id}</td>
 
-                    <td class="text-center">${articuloInstance?.nombre}</td>
+                    <td class="text-center">${articuloInstance?.descripcionArticulo}</td>
 
-                    <td class="text-center">${articuloInstance?.direcciones.descripcionDireccion}</td>
+                    <td class="text-center">${params?.existencias}</td>
 
-                    <td class="text-center">${articuloInstance?.saldo}</td>
-
-                    <td class="text-center">${articuloInstance?.limiteCredito}</td>
-
-                    <td class="text-center">${articuloInstance?.descuento}</td>
-
-                    <td class="text-center">${articuloInstance?.pedido.id}</td>
---%>
                 </tr>
         </g:each>
         </tbody>
     </table>
-</div>
 </body>
 </html>

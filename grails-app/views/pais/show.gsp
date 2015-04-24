@@ -27,7 +27,8 @@
 				<li class="fieldcontain">
 					<span id="nombrePais-label" class="property-label"><g:message code="pais.nombrePais.label" default="Nombre Pais" /></span>
 					
-						<span class="property-value" aria-labelledby="nombrePais-label"><g:fieldValue bean="${paisInstance}" field="nombrePais"/></span>
+						<span class="property-value" aria-labelledby="nombrePais-label">
+                        <g:fieldValue bean="${paisInstance}" field="nombrePais"/></span>
 					
 				</li>
 				</g:if>

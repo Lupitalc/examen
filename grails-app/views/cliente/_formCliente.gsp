@@ -1,12 +1,8 @@
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="" required="" value="${clienteInstance?.id}"/>
+<label>Nombre: </label> <g:textField name="nombre" required="" value="${clienteInstance?.nombre}"/></br>
 
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="username" required="" value="${clienteInstance?.nombre}"/>
+<label>Saldo : </label> <g:textField name="saldo" required="" value="${clienteInstance?.saldo}"/><br>
+
+<label>Limite de Credito </label> <g:textField name="limiteCredito" required="" value="${clienteInstance?.limiteCredito}"/></br>
+
+<label>Descuento: </label> <g:textField name="descuento" required="" value="${clienteInstance?.descuento}"/></br>
 

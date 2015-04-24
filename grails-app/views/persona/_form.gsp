@@ -43,7 +43,7 @@
 		<g:message code="persona.domicilio.label" default="Domicilio" />
 		
 	</label>
-	<g:textField name="domicilio" value="${personaInstance?.domicilio}"/>
+	<g:textField name="domicilio" value="${personaInstance?.domicilios}"/>
 
 </div>
 

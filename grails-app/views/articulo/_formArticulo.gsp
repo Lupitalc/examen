@@ -1,29 +1,7 @@
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="" required="" value="${articuloInstance?.id}"/>
 
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="username" required="" value="${articuloInstance?.salario}"/>
+<label>Descripcion del Articulo: </label> <g:textField name="descripcionArticulo" required="" value="${articuloInstance?.descripcionArticulo}"/></br>
 
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="username" required="" value="${articuloInstance?.direcciones?.direccion}"/>
+<label>Existencias: </label> <g:textField name="existencias" required="" value="${articuloInstance?.existencias}"/>
 
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="username" required="" value="${articuloInstance?.descuento}"/>
+<%--<g:textField name="direccion" required="" value="${articuloInstance?.fabricas?.nombreFabrica}"/>--%>
 
-<label for="username">
-    <g:message code="usuario.username.label" default="Username" />
-    <span class="required-indicator">*</span>
-</label>
-<g:textField name="username" required="" value="${articuloInstance?.username}"/>
